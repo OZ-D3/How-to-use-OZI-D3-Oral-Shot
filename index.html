@@ -6,9 +6,15 @@
 <title>OZI-D3 Oral Shot</title>
 
 <style>
-body{
+
+*{
     margin:0;
-    background:#ffffff;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -16,11 +22,13 @@ body{
 }
 
 video{
-    width:95%;
-    max-width:900px;
-    border-radius:15px;
-    box-shadow:0 0 20px rgba(0,0,0,0.25);
+    max-width:100%;
+    max-height:100vh;
+    width:auto;
+    height:auto;
+    object-fit:contain;
 }
+
 </style>
 
 </head>
@@ -29,7 +37,6 @@ video{
 
 <video controls autoplay playsinline>
     <source src="promo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
 </video>
 
 </body>
