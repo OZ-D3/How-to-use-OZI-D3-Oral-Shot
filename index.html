@@ -3,30 +3,156 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OZI-D3 Oral Shot</title>
+
+<title>OZI-D3 | How to Use</title>
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-    background:#000;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+
+background:#f5f5f5;
+
+}
+
+.header{
+
+background:white;
+padding:25px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+
+}
+
+.logo{
+
+width:220px;
+max-width:90%;
+
+}
+
+.hero{
+
+padding:40px 20px;
+text-align:center;
+
+}
+
+.hero h1{
+
+color:#f57c00;
+font-size:38px;
+margin-bottom:15px;
+
+}
+
+.hero p{
+
+font-size:20px;
+color:#555;
+margin-bottom:30px;
+
+}
+
+.bottle{
+
+width:220px;
+max-width:80%;
+margin-bottom:30px;
+
+}
+
+.video-box{
+
+width:90%;
+max-width:900px;
+margin:auto;
+background:white;
+padding:15px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
 }
 
 video{
-    max-width:100%;
-    max-height:100vh;
-    width:auto;
-    height:auto;
-    object-fit:contain;
+
+width:100%;
+height:auto;
+border-radius:10px;
+
+}
+
+.features{
+
+max-width:900px;
+margin:60px auto;
+padding:20px;
+
+}
+
+.features h2{
+
+text-align:center;
+color:#f57c00;
+margin-bottom:30px;
+
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+
+}
+
+.card{
+
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.card h3{
+
+color:#f57c00;
+margin-bottom:10px;
+
+}
+
+.footer{
+
+background:#f57c00;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:28px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
 }
 
 </style>
@@ -35,9 +161,81 @@ video{
 
 <body>
 
-<video controls autoplay playsinline>
-    <source src="promo.mp4" type="video/mp4">
+<div class="header">
+
+<img src="logo.png" class="logo">
+
+</div>
+
+<div class="hero">
+
+<h1>How to Use OZI-D3 Oral Shot</h1>
+
+<p>Easy • Convenient • Orange Flavour</p>
+
+<img src="bottle.png" class="bottle">
+
+</div>
+
+<div class="video-box">
+
+<video controls playsinline autoplay>
+
+<source src="promo.mp4" type="video/mp4">
+
 </video>
+
+</div>
+
+<div class="features">
+
+<h2>Why Choose OZI-D3?</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>200,000 IU</h3>
+
+<p>High-strength Vitamin D3 in a single oral shot.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Orange Flavour</h3>
+
+<p>Pleasant taste for improved patient acceptance.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Easy to Use</h3>
+
+<p>No injections. Convenient oral administration.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Patient Friendly</h3>
+
+<p>Designed for a simple and convenient experience.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<b>OZI-D3 Oral Shot</b><br><br>
+
+For more information, please consult your healthcare professional.
+
+</div>
 
 </body>
 </html>
